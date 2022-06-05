@@ -25,6 +25,12 @@ Describe the issue of this article in detail.
   {% include ".icons/material/attribution.svg" %}
 </a>
 {% endif %}
+
+<!-- Tags -->
+{% if "tags" in config.plugins %}
+  {% include "partials/tags.html" %}
+{% endif %}
+
 {% if not "\x3ch1" in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
