@@ -50,11 +50,12 @@ markdown_extensions:
 
 plugins:
   - search
-  - macros
   - tags:
       tags_file: tags.md
   - literate-nav:
       nav_file: navigation.md
+  - git-revision-date-localized
+  - macros
 
 extra:
   analytics:
